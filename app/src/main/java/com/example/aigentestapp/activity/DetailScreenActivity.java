@@ -104,7 +104,7 @@ public class DetailScreenActivity extends AppCompatActivity {
 
     private void sendMail() {
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto","narkhedereshma@gmail.com", null));
+                "mailto","developer@aigen.tech", null));
         intent.putExtra(Intent.EXTRA_SUBJECT, "Requesting for car details");
         intent.putExtra(Intent.EXTRA_TEXT, "Hi");
         startActivity(Intent.createChooser(intent, "Choose an Email client :"));
